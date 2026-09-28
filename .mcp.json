@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "socialtoai": {
+      "url": "https://mcp.socialtoai.com/mcp",
+      "headers": { "Authorization": "Bearer ${env:SOCIALTOAI_API_KEY}" }
+    }
+  }
+}

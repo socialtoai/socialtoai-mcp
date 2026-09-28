@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.socialtoai/socialtoai",
+  "title": "SocialToAI",
+  "description": "Search public posts, comments and creators on Xiaohongshu, Douyin, Weibo, X, Reddit and 5 more.",
+  "websiteUrl": "https://socialtoai.com/",
+  "repository": { "url": "https://github.com/socialtoai/socialtoai-mcp", "source": "github" },
+  "version": "1.0.1",
+  "icons": [
+    { "src": "https://socialtoai.com/favicon.svg", "mimeType": "image/svg+xml", "sizes": ["any"] }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.socialtoai.com/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "SocialToAI API key from https://socialtoai.com/console/",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
