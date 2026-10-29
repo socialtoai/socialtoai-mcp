@@ -2,9 +2,13 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.socialtoai/socialtoai",
   "title": "SocialToAI",
-  "description": "Read public social media posts, comments, profiles and trends from 18 platforms. Pay per call.",
+  "description": "Social media data for AI agents: one MCP address, 18 platforms. Pay per call; failed calls are free.",
   "websiteUrl": "https://socialtoai.com/",
-  "version": "2.0.0",
+  "repository": {
+    "url": "https://github.com/socialtoai/socialtoai-mcp",
+    "source": "github"
+  },
+  "version": "2.2.0",
   "remotes": [
     {
       "type": "streamable-http",
@@ -13,7 +17,6 @@
         {
           "name": "X-API-Key",
           "description": "Optional. Clients sign in with OAuth by default; a developer tool may send a SocialToAI API key here instead, created at https://socialtoai.com/console/.",
-          "isRequired": false,
           "isSecret": true
         }
       ]
@@ -37,7 +40,9 @@
         "find_creators",
         "account_watch",
         "creator_card",
-        "research"
+        "research",
+        "watch",
+        "watch_news"
       ]
     }
   }
